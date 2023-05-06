@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
 
 body {
     font-family: $font-main;
@@ -14,4 +14,18 @@ a {
     &:hover {
         color: $color-accent;
     }
+}
+
+h1 {
+    color: $color-accent;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1140px;
+}
+
+.text-right {
+	text-align: right;
 }
