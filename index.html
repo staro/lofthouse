@@ -14,7 +14,7 @@
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-row">
-                        <a href="#"><img src="/img/logo.svg" alt="logo" /></a>
+                        <a href="#"><img src="/img/logo/logo.svg" alt="logo" /></a>
                         <div class="header__nav">
                             <nav class="nav">
                                 <ul class="nav__list">
@@ -47,6 +47,7 @@
             </div>
         </header>
         <main>
+            <!-- Section Benefits -->
             <section class="benefits" id="benefits">
                 <h2 class="visually-hidden">Преимущества ЖК</h2>
                 <div class="container container--small">
@@ -70,7 +71,7 @@
                     </div>
                 </div>
             </section>
-
+            <!-- Section Appartments -->
             <section class="appartments">
                 <div class="container">
                     <div class="appartments__title">
@@ -96,7 +97,7 @@
                     </div>
                 </div>
             </section>
-
+            <!-- Section Cta -->
             <section class="cta">
                 <div class="container">
                     <div class="cta__title">
@@ -115,12 +116,106 @@
                             <p class="form__privacy">
                                 *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
                             </p>
-                            <button type="submit" class="form_btn">Посмотреть район</button>
+                            <button type="submit" class="form__btn">Посмотреть район</button>
                         </form>
                     </div>
                 </div>
             </section>
+            <!-- Section Video -->
+            <section class="video">
+                <div class="container">
+                    <h2 class="visually-hidden">Видео</h2>
+                    <a href="https://www.youtube.com/watch?v=Egc6jaf8QTY" class="video__link">
+                        <img src="/img/video/play.svg" alt="play icon" class="video__icon" />
+                        <img src="/img/video/video.jpg" alt="play icon" class="video__img" />
+                    </a>
+                </div>
+            </section>
+            <!-- Section Map -->
+            <section class="section__map">
+                <div class="container">
+                    <div class="section__map-title">
+                        <h2 class="title-2">Район на карте</h2>
+                    </div>
+                    <div class="section__map-map">
+                        <div class="map" id="map"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Feedback -->
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__title">
+                        <h2 class="title-2">Есть вопросы?</h2>
+                    </div>
+                    <form action="" class="feedback__form form">
+                        <p class="form__privacy">
+                            *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                        </p>
+                        <input type="text" class="form__input" placeholder="Ваше имя" />
+                        <input type="text" class="form__input" placeholder="Ваш телефон" />
+                        <button type="submit" class="form__btn">Посмотреть район</button>
+                    </form>
+                </div>
+            </section>
         </main>
+        <!-- Section Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__logo">
+                        <a href="#"><img src="/img/logo/logo-light.svg" alt="Logo footer" /></a>
+                    </div>
+                    <div class="footer__nav">
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li><a href="#">О комплексе</a></li>
+                                <li><a href="#">Район</a></li>
+                                <li><a href="#">Каталог квартир</a></li>
+                                <li><a href="#">Ипотека</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__nav">
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li><a href="#">Поселение и переезд</a></li>
+                                <li><a href="#">Сервисные услуги</a></li>
+                                <li><a href="#">Экологическая устойчивость</a></li>
+                                <li><a href="#">Инвестиционные возможности</a></li>
+                                <li><a href="#">Программа лояльности</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer__address">
+                        <ul class="footer__nav-list">
+                            <li>Адрес: Наб. реки Фонтанки 10-15</li>
+                            <li>Телефон: <a href="tel:+78121234567">8 (812) 123-45-67</a></li>
+                            <li>Отдел продаж: 10:00 - 20:00</li>
+                            <li>E-mail: <a class="link-bold" href="mailto:vip@lofthouse.ru">vip@lofthouse.ru</a></li>
+                            <ul class="footer__socials">
+                                    <li class="socials__item">
+                                        <img src="/img/socials/youtube.svg" alt="youtube" />
+                                    </li>
+									<li class="socials__item">
+                                        <img src="/img/socials/vk.svg" alt="vk" />
+                                    </li>
+									<li class="socials__item">
+                                        <img src="/img/socials/facebook.svg" alt="facebook" />
+                                    </li>
+									<li class="socials__item">
+                                        <img src="/img/socials/instagram.svg" alt="instagram" />
+                                    </li>
+									
+                                </div>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="js/main.js"></script>
     </body>
 </html>
