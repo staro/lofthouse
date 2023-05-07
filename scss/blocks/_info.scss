@@ -13,9 +13,9 @@
         background-repeat: no-repeat;
     }
 
-	&.info--map::before {
-		background-image: url('/img/header/map.svg');
-	}
+    &.info--map::before {
+        background-image: url('/img/header/map.svg');
+    }
 
     &.info--tel::before {
         background-image: url('/img/header/phone.svg');
