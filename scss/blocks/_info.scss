@@ -20,4 +20,9 @@
     &.info--tel::before {
         background-image: url('/img/header/phone.svg');
     }
+
+    @include mediaTablet {
+        font-size: 14px;
+        padding-left: 26px;
+    }
 }

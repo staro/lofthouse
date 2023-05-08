@@ -1,5 +1,17 @@
 .video {
+    position: relative;
     text-align: center;
+
+    &::after {
+        content: 'IV';
+        position: absolute;
+        line-height: 1.4;
+        left: calc(50% + 555px);
+        transform: translate(-50%, 0%);
+
+		// Mixin
+        @include decorNumber;
+    }
 }
 
 .video__link {

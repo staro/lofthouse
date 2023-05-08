@@ -23,7 +23,7 @@ h1 {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    width: 1140px;
+    max-width: 1140px;
 
     &.container--small {
         max-width: 840px;
@@ -60,6 +60,10 @@ h1 {
 }
 
 .link-bold {
-	font-weight: 700;
-	color: $color-accent;
+    font-weight: 700;
+    color: $color-accent;
+}
+
+.none {
+    display: none !important;
 }

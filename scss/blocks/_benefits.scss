@@ -1,5 +1,16 @@
 .benefits {
+    position: relative;
     padding: 120px 0;
+
+    &::after {
+        content: 'II';
+        line-height: 1.15;
+        left: calc(50% + 555px);
+        transform: translate(-50%, 0%);
+
+		// Mixin
+        @include decorNumber;
+    }
 }
 
 .benefits__row {
