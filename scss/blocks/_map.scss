@@ -1,6 +1,7 @@
 .section__map {
     position: relative;
     padding: 180px 0;
+	overflow: hidden;
 
     &::before {
         content: 'V';
@@ -13,10 +14,18 @@
 		// Mixin
         @include decorNumber;
     }
+
+	@include mediaTablet {
+		padding: 60px 0;
+	}
 }
 
 .section__map-title {
     margin-bottom: 88px;
+
+	@include mediaTablet {
+		margin-bottom: 35px;
+	}
 }
 
 .map {

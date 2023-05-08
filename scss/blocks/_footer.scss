@@ -4,12 +4,22 @@
     background-color: $color-footer;
     font-size: 14px;
     letter-spacing: 0.05em;
+
+	@include mediaTablet {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
 }
 
 .footer__row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+
+	@include mediaTablet {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
 }
 
 .footer__nav-list {
@@ -20,4 +30,8 @@
 .footer__socials {
     display: flex;
     gap: 22px;
+
+	@include mediaTablet {
+		padding-top: 15px;
+	}
 }

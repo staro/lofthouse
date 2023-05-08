@@ -1,6 +1,7 @@
 .video {
     position: relative;
     text-align: center;
+    overflow: hidden;
 
     &::after {
         content: 'IV';
@@ -9,7 +10,7 @@
         left: calc(50% + 555px);
         transform: translate(-50%, 0%);
 
-		// Mixin
+        // Mixin
         @include decorNumber;
     }
 }
@@ -46,4 +47,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.2s ease-in;
+
+    @include mediaTablet {
+        width: 60px;
+        height: 60px;
+    }
 }

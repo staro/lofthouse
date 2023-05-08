@@ -1,5 +1,6 @@
 .apartments {
     position: relative;
+    overflow: hidden;
 
     &::before {
         content: 'III';
@@ -7,19 +8,27 @@
         right: calc(50% + 555px);
         transform: translate(50%, 0%);
 
-		// Mixin
+        // Mixin
         @include decorNumber;
     }
 }
 
 .apartments__title {
     margin-bottom: 88px;
+
+    @include mediaTablet {
+        margin-bottom: 35px;
+    }
 }
 
 .apartments__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // For Media
-    // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 30px;
+
+    @include mediaTablet {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 30px;
+    }
 }

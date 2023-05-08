@@ -57,6 +57,10 @@ h1 {
     color: $color-accent;
     font-size: 36px;
     font-weight: 700;
+
+	@include mediaTablet {
+		font-size: 22px;
+	}
 }
 
 .link-bold {
@@ -64,6 +68,12 @@ h1 {
     color: $color-accent;
 }
 
+// Скрывает элементы
 .none {
     display: none !important;
+}
+
+// Убирает скролл
+.no-scroll {
+    overflow-y: hidden;
 }
