@@ -2,35 +2,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     padding-top: 30px;
     padding-bottom: 74px;
+
     min-height: 840px;
+
     background: linear-gradient(180deg, $color-dark 11.98%, rgba(45, 52, 60, 0.38) 51.04%, $color-dark 92.19%),
-        url('img/header/header-bg.jpg');
-
-    @include mediaTablet {
-        min-height: unset;
-        row-gap: 50px;
-    }
-}
-
-.header__top-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    padding-top: 30px;
-    padding-bottom: 74px;
-
-    min-height: 840px;
-
-    background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%),
         url('./../img/header/header-bg.jpg');
 
     @include mediaTablet {
