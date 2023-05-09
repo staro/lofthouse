@@ -25,15 +25,13 @@ youtubelightbox.addEventListener(
 );
 
 // Exclude youtube iframe from above action
-youtubelightbox
-    .querySelector('.youtubelightbox__centeredchild')
-    .addEventListener(
-        'click',
-        function (e) {
-            e.stopPropagation();
-        },
-        false
-    );
+youtubelightbox.querySelector('.youtubelightbox__centeredchild').addEventListener(
+    'click',
+    function (e) {
+        e.stopPropagation();
+    },
+    false
+);
 
 // define onYouTubeIframeAPIReady() function and initialize lightbox when API is ready
 function onYouTubeIframeAPIReady() {
@@ -49,8 +47,7 @@ function getyoutubeid(link) {
     // and more
 
     //See http://stackoverflow.com/a/6904504/4360074
-    var youtubeidreg =
-        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
+    var youtubeidreg = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
     return youtubeidreg.exec(link)[1]; // return Youtube video ID portion of link
 }
 

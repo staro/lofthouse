@@ -16,11 +16,7 @@ const mask = (selector) => {
             val = this.value.replace(/\D/g, '');
 
         this.value = matrix.replace(/(?!\+)./g, function (a) {
-            return /[#\d]/.test(a) && i < val.length
-                ? val.charAt(i++)
-                : i >= val.length
-                ? ''
-                : a;
+            return /[#\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
         });
     }
 
