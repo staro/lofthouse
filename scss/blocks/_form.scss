@@ -1,47 +1,47 @@
 .cta__form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 35px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 30px;
 
-  @include mediaTablet {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 25px;
-  }
+    @include mediaTablet {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 25px;
+    }
 }
 
 .form__input {
-  height: 50px;
-  padding: 12px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: $color-text;
-  font-size: 14px;
-  transition: background-color 0.2s ease-in;
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $color-text;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in;
 
-  &::placeholder {
-    color: $placeholder;
-  }
+    &::placeholder {
+        color: $placeholder;
+    }
 
-  &:focus {
-    background-color: rgba(255, 255, 255, 0.25);
-  }
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
 }
 
 .form__privacy {
-  font-size: 13px;
-  line-height: 1.2;
-  color: $privacy;
-  text-align: center;
+    font-size: 13px;
+    line-height: 1.2;
+    color: $privacy;
+    text-align: center;
 }
 
 .form__btn {
-  height: 50px;
-  padding: 12px 53px;
-  background-color: $color-accent;
-  color: $color-text;
-  transition: background-color 0.2s ease-in;
+    height: 50px;
+    padding: 12px 53px;
+    background-color: $color-accent;
+    color: $color-text;
+    transition: background-color 0.2s ease-in;
 
-  &:hover {
-    background-color: $hover-accent;
-  }
+    &:hover {
+        background-color: $hover-accent;
+    }
 }

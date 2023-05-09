@@ -1,27 +1,27 @@
 .feedback {
-  margin-bottom: 180px;
+    margin-bottom: 180px;
 
-  @include mediaTablet {
-    margin-bottom: 35px;
-  }
+    @include mediaTablet {
+        margin-bottom: 35px;
+    }
 }
 
 .feedback__title {
-  margin-bottom: 38px;
+    margin-bottom: 38px;
 
-  @include mediaTablet {
-    margin-bottom: 26px;
-  }
+    @include mediaTablet {
+        margin-bottom: 26px;
+    }
 }
 
 .feedback__form {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: center;
 
-  @include mediaTablet {
-    margin-bottom: 60px;
-    grid-template-columns: 1fr;
-  }
+    @include mediaTablet {
+        margin-bottom: 60px;
+        grid-template-columns: 1fr;
+    }
 }
