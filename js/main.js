@@ -24,3 +24,36 @@ phoneInputs.forEach((input) => {
         if (input.value === '+') input.value = '';
     });
 });
+
+// Яндекс карта
+
+// Функция ymaps.ready() будет вызвана, когда
+// загрузятся все компоненты API, а также когда будет готово DOM-деревоs
+ymaps.ready(init);
+
+function init() {
+    // Создание карты
+    const map = new ymaps.Map('map', {
+        center: [55.706878, 37.935118],
+        zoom: 15,
+    });
+
+    // Создание метки
+    const myPlacemark = new ymaps.Placemark(
+        [55.706878, 37.935118],
+        {},
+        {
+            iconLayout: 'default#image',
+            iconImageHref: '/img/map/location-pin.svg',
+            iconImageSize: [40, 40],
+            iconImageOffset: [-3, -42],
+        },
+    );
+
+    map.controls.remove('geolocationControl'); //
+    map.controls.remove('searchControl');
+    map.controls.remove('trafficControl');
+
+    // Размещение геообъекта на карте
+    map.geoObjects.add(myPlacemark);
+}
