@@ -34,13 +34,13 @@ ymaps.ready(init);
 function init() {
     // Создание карты
     const map = new ymaps.Map('map', {
-        center: [55.706878, 37.935118],
+        center: [59.943543,30.338928],
         zoom: 15,
     });
 
     // Создание метки
     const myPlacemark = new ymaps.Placemark(
-        [55.706878, 37.935118],
+        [59.943543,30.338928],
         {},
         {
             iconLayout: 'default#image',
@@ -50,9 +50,15 @@ function init() {
         },
     );
 
-    map.controls.remove('geolocationControl'); //
-    map.controls.remove('searchControl');
-    map.controls.remove('trafficControl');
+    map.controls.remove('geolocationControl'); // удаляем геолокацию
+    map.controls.remove('searchControl'); // удаляем поиск
+    map.controls.remove('trafficControl'); // удаляем контроль трафика
+    map.controls.remove('typeSelector'); // удаляем тип
+    map.controls.remove('ruleControl'); // удаляем контрол правил
+
+    // map.controls.remove('fullscreenControl');  // Удаляем кнопку перехода в полноэкранный режим
+    // map.controls.remove('zoomControl'); // Удаляем контрол зумирования
+    // map.behavior.disable('scrollZoom'); // Отключаем скролл карты
 
     // Размещение геообъекта на карте
     map.geoObjects.add(myPlacemark);
