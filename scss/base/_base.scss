@@ -1,78 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
 
 body {
-    font-family: $font-main;
-    background-color: $color-dark;
-    color: $color-text;
-    font-size: 16px;
+  font-family: $font-main;
+  background-color: $color-dark;
+  color: $color-text;
+  font-size: 16px;
 }
 
 a {
-    color: $color-text;
-    transition: color 0.2s ease-in;
+  color: $color-text;
+  transition: color 0.2s ease-in;
 
-    &:hover {
-        color: $color-accent;
-    }
+  &:hover {
+    color: $color-accent;
+  }
 }
 
 h1 {
-    color: $color-accent;
+  color: $color-accent;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
 
-    &.container--small {
-        max-width: 840px;
-    }
+  &.container--small {
+    max-width: 840px;
+  }
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .visually-hidden {
-    /* Contains text within 1px box */
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
+  /* Contains text within 1px box */
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 
-    /* Keep the layout */
-    position: absolute;
+  /* Keep the layout */
+  position: absolute;
 
-    /* Remove any visible trace (e.g. background color) */
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip-path: inset(50%);
+  /* Remove any visible trace (e.g. background color) */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip-path: inset(50%);
 
-    /* Prevent the screen reader to skip spaces between words */
-    white-space: nowrap;
+  /* Prevent the screen reader to skip spaces between words */
+  white-space: nowrap;
 }
 
 .title-2 {
-    font-family: $font-accent;
-    color: $color-accent;
-    font-size: 36px;
-    font-weight: 700;
+  font-family: $font-accent;
+  color: $color-accent;
+  font-size: 36px;
+  font-weight: 700;
 
-    @include mediaTablet {
-        font-size: 22px;
-    }
+  @include mediaTablet {
+    font-size: 22px;
+  }
 }
 
 .link-bold {
-    font-weight: 700;
-    color: $color-accent;
+  font-weight: 700;
+  color: $color-accent;
 }
 
 // Скрывает элементы
 .none {
-    display: none !important;
+  display: none !important;
 }
 
 // Убирает скролл
 .no-scroll {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }

@@ -17,20 +17,20 @@ var player; // variable to hold new YT.Player() instance
 // Hide lightbox when clicked on
 youtubelightbox.addEventListener(
     'click',
-    function () {
+    function() {
         this.style.display = 'none';
         player.stopVideo();
     },
-    false
+    false,
 );
 
 // Exclude youtube iframe from above action
 youtubelightbox.querySelector('.youtubelightbox__centeredchild').addEventListener(
     'click',
-    function (e) {
+    function(e) {
         e.stopPropagation();
     },
-    false
+    false,
 );
 
 // define onYouTubeIframeAPIReady() function and initialize lightbox when API is ready
@@ -47,7 +47,8 @@ function getyoutubeid(link) {
     // and more
 
     //See http://stackoverflow.com/a/6904504/4360074
-    var youtubeidreg = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
+    var youtubeidreg =
+        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
     return youtubeidreg.exec(link)[1]; // return Youtube video ID portion of link
 }
 
@@ -68,7 +69,7 @@ function createlightbox() {
         link._videoid = getyoutubeid(link); // store youtube video ID portion of link inside _videoid property
         targetlinks[i].addEventListener(
             'click',
-            function (e) {
+            function(e) {
                 youtubelightbox.style.display = 'block';
                 if (typeof player == 'undefined') {
                     // if video player hasn't been created yet
@@ -83,7 +84,7 @@ function createlightbox() {
                 }
                 e.preventDefault();
             },
-            false
+            false,
         );
     }
 }

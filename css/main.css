@@ -193,7 +193,7 @@ h1 {
     padding-bottom: 74px;
     min-height: 840px;
     background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%),
-        url('/img/header/header-bg.jpg');
+    url('/img/header/header-bg.jpg');
 }
 
 @media screen and (max-width: 959px) {
@@ -568,7 +568,8 @@ h1 {
 .cta {
     padding: 180px 0;
     background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%),
-        linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url('img/cta/cta-bg.jpg'), #c4c4c4;
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url('img/cta/cta-bg.jpg'),
+    #c4c4c4;
 }
 
 @media screen and (max-width: 959px) {
