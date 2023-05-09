@@ -1,5 +1,4 @@
 /* Nav Icon */
-
 const navBtn = document.querySelector('.nav-icon-btn');
 const navIcon = document.querySelector('.nav-icon');
 const nav = document.querySelector('.header__top-row');
@@ -9,3 +8,19 @@ navBtn.onclick = function () {
     nav.classList.toggle('header__top-row--mobile');
     document.body.classList.toggle('no-scroll');
 };
+
+/* Phone Mask */
+mask('[data-tel-input]');
+
+// Удаляем "+" если ничего не введено, чтобы показать placeholder
+const phoneInputs = document.querySelectorAll('[data-tel-input]');
+
+phoneInputs.forEach((input) => {
+    input.addEventListener('input', () => {
+        if (input.value === '+') input.value = '';
+    });
+
+    input.addEventListener('blur', () => {
+        if (input.value === '+') input.value = '';
+    });
+});

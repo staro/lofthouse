@@ -45,7 +45,6 @@ h1 {
 
     /* Remove any visible trace (e.g. background color) */
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px 1px 1px 1px);
     clip-path: inset(50%);
 
     /* Prevent the screen reader to skip spaces between words */
@@ -58,9 +57,9 @@ h1 {
     font-size: 36px;
     font-weight: 700;
 
-	@include mediaTablet {
-		font-size: 22px;
-	}
+    @include mediaTablet {
+        font-size: 22px;
+    }
 }
 
 .link-bold {

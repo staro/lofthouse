@@ -33,7 +33,8 @@
     height: var(--line-height);
 
     background-color: var(--color);
-    transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+    transition: transform var(--time) ease-in,
+        top var(--time) linear var(--time);
 }
 
 .nav-icon::before {
@@ -51,7 +52,8 @@
 .nav-icon.nav-icon--active::before,
 .nav-icon.nav-icon--active::after {
     top: 0;
-    transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+    transition: top var(--time) linear,
+        transform var(--time) ease-in var(--time);
 }
 
 .nav-icon.nav-icon--active::before {
